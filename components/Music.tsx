@@ -1,9 +1,6 @@
 "use client"
-import Image from 'next/image'
 import React, { useState, useEffect, useRef } from 'react'
 import WaveSurfer from 'wavesurfer.js'
-import play from '../public/play.png'
-import pause from '../public/pause.png'
 import Audio from './Audio'
 import Textarea from './Textarea'
 
@@ -61,7 +58,7 @@ const Music: React.FC = () => {
                     onChange={(e) => setDescription(e.target.value)}
                     rows={4}
                 /> */}
-                <Textarea/>
+                <Textarea />
             </div>
             {/* <div className='text-center'>
                 <button className='bg-green-500 text-white py-2 px-6 rounded-full'>Let's vibe</button>

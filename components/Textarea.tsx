@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Wand2 } from 'lucide-react';
 
-const TextPrompt = () => {
+const TextArea = () => {
   const [text, setText] = useState('');
   
   const handleSubmit = () => {
@@ -41,4 +41,4 @@ const TextPrompt = () => {
   );
 };
 
-export default TextPrompt;
+export default TextArea;
