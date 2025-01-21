@@ -5,7 +5,7 @@ import Audio from './Audio'
 import Textarea from './Textarea'
 
 const Music: React.FC = () => {
-    const [isPlaying, setIsPlaying] = useState<boolean>(false)
+    // const [isPlaying, setIsPlaying] = useState<boolean>(false)
     const waveformRef = useRef<HTMLDivElement>(null)
     const waveSurfer = useRef<WaveSurfer | null>(null)
 
