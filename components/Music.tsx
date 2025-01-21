@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect, useRef } from 'react'
+import React, {  useEffect, useRef } from 'react'
 import WaveSurfer from 'wavesurfer.js'
 import Audio from './Audio'
 import Textarea from './Textarea'
