@@ -5,7 +5,6 @@ import Audio from './Audio'
 import Textarea from './Textarea'
 
 const Music: React.FC = () => {
-    const [description, setDescription] = useState<string>('')
     const [isPlaying, setIsPlaying] = useState<boolean>(false)
     const waveformRef = useRef<HTMLDivElement>(null)
     const waveSurfer = useRef<WaveSurfer | null>(null)
@@ -32,16 +31,16 @@ const Music: React.FC = () => {
         }
     }, [])
 
-    const handlePlayPause = () => {
-        if (waveSurfer.current) {
-            if (isPlaying) {
-                waveSurfer.current.pause()
-            } else {
-                waveSurfer.current.play()
-            }
-            setIsPlaying(!isPlaying)
-        }
-    }
+    // const handlePlayPause = () => {
+    //     if (waveSurfer.current) {
+    //         if (isPlaying) {
+    //             waveSurfer.current.pause()
+    //         } else {
+    //             waveSurfer.current.play()
+    //         }
+    //         setIsPlaying(!isPlaying)
+    //     }
+    // }
 
     return (
         <div className='w-full max-w-xl bg-transparent text-white gap-2 rounded-lg shadow-lg'>
@@ -51,17 +50,10 @@ const Music: React.FC = () => {
             </div>
             <div className='text-center '>
                 <h3 className='text-xl font-semibold'>Describe the melody you need for your moment.</h3>
-                {/* <textarea
-                    className='w-full p-4 mt-4 bg-white text-black rounded-md'
-                    placeholder='Feeling intrigued while exploring a new city.'
-                    value={description}
-                    onChange={(e) => setDescription(e.target.value)}
-                    rows={4}
-                /> */}
                 <Textarea />
             </div>
             {/* <div className='text-center'>
-                <button className='bg-green-500 text-white py-2 px-6 rounded-full'>Let's vibe</button>
+                <button className='bg-green-500 text-white py-2 px-6 rounded-full' onClick={handlePlayPause}>Let&apos;s vibe</button>
             </div> */}
         </div>
     )

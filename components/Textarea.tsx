@@ -33,7 +33,7 @@ const TextArea = () => {
             className="flex items-center gap-2 px-6 py-2 bg-lime-300 text-slate-900 rounded-full font-medium hover:bg-lime-200 transition-colors"
           >
             <Wand2 size={18} />
-            Let's vibe
+            Let&apos;s vibe
           </button>
         </div>
       </div>
